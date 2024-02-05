@@ -11,6 +11,8 @@ namespace calc {
 class DomainOfDefinition {
 public:
     enum class BoundType { Inclusive, Exclusive };
+    DomainOfDefinition() = default;
+
 
     // Constructor for a single interval
     DomainOfDefinition(float lower, BoundType lowerType, float upper, BoundType upperType);
