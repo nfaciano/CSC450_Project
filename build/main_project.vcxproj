@@ -86,7 +86,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\nickf\OneDrive\Desktop\CSC450_Project\calc\SDK\Headers;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\calc\Development\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\SDK\Headers;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\Development\Source;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\SDK\Demos;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\random\SDK\Headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -98,16 +98,16 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CSC450LIB_USE_SOURCE=1;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\nickf\OneDrive\Desktop\CSC450_Project\calc\SDK\Headers;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\calc\Development\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CSC450LIB_USE_SOURCE=1;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\SDK\Headers;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\Development\Source;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\SDK\Demos;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\random\SDK\Headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\nickf\OneDrive\Desktop\CSC450_Project\calc\SDK\Headers;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\calc\Development\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\SDK\Headers;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\Development\Source;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\SDK\Demos;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\random\SDK\Headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -130,7 +130,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\nickf\OneDrive\Desktop\CSC450_Project\calc\SDK\Headers;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\calc\Development\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\SDK\Headers;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\Development\Source;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\SDK\Demos;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\random\SDK\Headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -140,18 +140,18 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CSC450LIB_USE_SOURCE=1;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\nickf\OneDrive\Desktop\CSC450_Project\calc\SDK\Headers;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\calc\Development\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CSC450LIB_USE_SOURCE=1;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\SDK\Headers;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\Development\Source;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\SDK\Demos;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\random\SDK\Headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\nickf\OneDrive\Desktop\CSC450_Project\calc\SDK\Headers;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\calc\Development\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\SDK\Headers;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\Development\Source;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\SDK\Demos;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\random\SDK\Headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -174,7 +174,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\nickf\OneDrive\Desktop\CSC450_Project\calc\SDK\Headers;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\calc\Development\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\SDK\Headers;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\Development\Source;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\SDK\Demos;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\random\SDK\Headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
@@ -184,18 +184,18 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CSC450LIB_USE_SOURCE=1;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\nickf\OneDrive\Desktop\CSC450_Project\calc\SDK\Headers;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\calc\Development\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CSC450LIB_USE_SOURCE=1;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\SDK\Headers;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\Development\Source;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\SDK\Demos;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\random\SDK\Headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\nickf\OneDrive\Desktop\CSC450_Project\calc\SDK\Headers;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\calc\Development\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\SDK\Headers;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\Development\Source;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\SDK\Demos;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\random\SDK\Headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -218,7 +218,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\nickf\OneDrive\Desktop\CSC450_Project\calc\SDK\Headers;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\calc\Development\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\SDK\Headers;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\Development\Source;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\SDK\Demos;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\random\SDK\Headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -229,16 +229,16 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CSC450LIB_USE_SOURCE=1;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\nickf\OneDrive\Desktop\CSC450_Project\calc\SDK\Headers;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\calc\Development\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CSC450LIB_USE_SOURCE=1;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\SDK\Headers;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\Development\Source;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\SDK\Demos;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\random\SDK\Headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\nickf\OneDrive\Desktop\CSC450_Project\calc\SDK\Headers;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\calc\Development\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\SDK\Headers;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\Development\Source;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\SDK\Demos;C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\random\SDK\Headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -317,7 +317,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\calc\Development\Projects\main.cpp" />
+    <ClCompile Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\random\SDK\Demos\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\build\ZERO_CHECK.vcxproj">

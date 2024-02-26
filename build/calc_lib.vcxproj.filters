@@ -1,10 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\calc\Development\Source\domainOfDefinition.cpp">
+    <ClCompile Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\Development\Source\domainOfDefinition.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\calc\Development\Source\Function1d.cpp">
+    <ClCompile Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\Development\Source\Function1D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\Development\Source\PolynomialFunction1D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\Development\Source\BisectionSolver1D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\Development\Source\NewtonRaphsonSolver1D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\Development\Source\SecantSolver1D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\random\Development\Source\CSC450Exception.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\random\Development\Source\BallSimulation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\random\Development\Source\Surface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\random\Development\Source\Ball.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

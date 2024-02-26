@@ -1,0 +1,89 @@
+
+f1[x_]:=Cos[x^5-1]/(1+x^3);
+f2[x_]:=Cos[x]/(1-Cos[2 x]/(2+Sin[x])^2);
+f3[x_]:=Cos[x]/(1-Cos[2 x]/(1+Sin[x])^2);
+f4[x_]:=x Sin[1/x];
+
+(*Choose a point for linear approximation*)
+x0=2;
+
+(*Compute derivatives at x0*)
+f1_derivative=f1'[x0];
+f2_derivative=f2'[x0];
+f3_derivative=f3'[x0];
+f4_derivative=f4'[x0];
+
+(*Define the linear approximations*)
+lf1[x_]:=f1[x0]+f1_derivative*(x-x0);
+lf2[x_]:=f2[x0]+f2_derivative*(x-x0);
+lf3[x_]:=f3[x0]+f3_derivative*(x-x0);
+lf4[x_]:=f4[x0]+f4_derivative*(x-x0);
+
+(* Plot for f1 *)
+Plot[{f1[x], lf1[x]}, {x, x0 - 0.00001, x0 + 0.000001}, 
+ PlotLegends -> {"f1", "Linear Approximation at x0 = 2"}, 
+ PlotStyle -> {Blue, Red}]
+
+(* Plot for f2 *)
+Plot[{f2[x], lf2[x]}, {x, x0 - 0.00001, x0 + 0.000001}, 
+ PlotLegends -> {"f2", "Linear Approximation at x0 = 2"}, 
+ PlotStyle -> {Green, Purple}]
+
+(* Plot for f3 *)
+Plot[{f3[x], lf3[x]}, {x, x0 - 0.00001, x0 + 0.000001}, 
+ PlotLegends -> {"f3", "Linear Approximation at x0 = 2"}, 
+ PlotStyle -> {Orange, Cyan}]
+
+(* Plot for f4 *)
+Plot[{f4[x], lf4[x]}, {x, x0 - 0.0000001, x0 + 0.0000001}, 
+ PlotLegends -> {"f4", "Linear Approximation at x0 = 2"}, 
+ PlotStyle -> {Yellow, Brown}]
+
+
+
+
+
+
+Out[980]= 	f1
+	Linear Approximation at x0 = 2
+
+
+Out[983]= 	f2
+	Linear Approximation at x0 = 2
+
+
+Out[986]= 	f3
+	Linear Approximation at x0 = 2
+
+
+Out[989]= 	f4
+	Linear Approximation at x0 = 2
+
+
+During evaluation of In[958]:=
+Syntax::sntxf: 
+   "" cannot be followed by 
+    "(*Choose a point for linear approximation*)".
+
+In[996]:= ClearAll["Global`*"]
+
+(*Define your function*)
+f[x_]:=Sin[x]
+
+(*Define the third derivative of your function*)
+f'''[x_]:=Evaluate@D[f[x],{x,3}]
+
+(*Define the residual term*)
+residual[h_,x_]:=h^3/6 (f'''[x+h/2]-f'''[x-h/2])
+
+(*Plot the absolute and relative error of the approximation*)
+Manipulate[Plot[{residual[h,x],residual[h,x]/(f'[x])},{h,0,1},PlotRange->All,PlotLegends->{"Residual","Relative Error"},AxesLabel->{"h","Error"},PlotLabel->"Absolute and Relative Error of Approximation at x = "<>ToString[x]],{{x,0},-2 Pi,2 Pi}]
+
+During evaluation of In[996]:= SetDelayed::write: Tag Function in (-Cos[#1]&)[x_] is Protected.
+Out[998]= $Failed
+Out[1000]= Manipulate[Plot[{residual[h, x], residual[h, x]/Derivative[1][f][x]}, 
+   {h, 0, 1}, PlotRange -> All, PlotLegends -> 
+    {"Residual", "Relative Error"}, AxesLabel -> {"h", "Error"}, 
+   PlotLabel -> StringJoin[
+     "Absolute and Relative Error of Approximation at x = ", ToString[x]]], 
+  {{x, 3.141592653589793}, -2*Pi, 2*Pi}]

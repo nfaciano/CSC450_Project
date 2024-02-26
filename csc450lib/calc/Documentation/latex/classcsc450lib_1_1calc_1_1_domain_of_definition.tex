@@ -1,0 +1,121 @@
+\doxysection{csc450lib\+::calc\+::Domain\+Of\+Definition Class Reference}
+\hypertarget{classcsc450lib_1_1calc_1_1_domain_of_definition}{}\label{classcsc450lib_1_1calc_1_1_domain_of_definition}\index{csc450lib::calc::DomainOfDefinition@{csc450lib::calc::DomainOfDefinition}}
+
+
+Represents the domain of definition for a function, including intervals and points.  
+
+
+
+
+{\ttfamily \#include $<$Domain\+Of\+Definition.\+h$>$}
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_domain_of_definition_aa72c6ed0797db2d9a224565fe8c155fb}{Bound\+Type}} \{ {\bfseries Inclusive}
+, {\bfseries Exclusive}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcsc450lib_1_1calc_1_1_domain_of_definition_a67f7a8e9c80010a563bab9d40ef4d88b}{Domain\+Of\+Definition}} ()
+\item 
+\mbox{\hyperlink{classcsc450lib_1_1calc_1_1_domain_of_definition_a97d90e3e0fcb0dcdff198c75beb59d15}{Domain\+Of\+Definition}} (float lower, \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_domain_of_definition_aa72c6ed0797db2d9a224565fe8c155fb}{Bound\+Type}} lower\+Type, float upper, \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_domain_of_definition_aa72c6ed0797db2d9a224565fe8c155fb}{Bound\+Type}} upper\+Type)
+\item 
+void \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_domain_of_definition_a646aa36a8bf358a5fabe715038a7bf3e}{add\+Interval}} (float lower, \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_domain_of_definition_aa72c6ed0797db2d9a224565fe8c155fb}{Bound\+Type}} lower\+Type, float upper, \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_domain_of_definition_aa72c6ed0797db2d9a224565fe8c155fb}{Bound\+Type}} upper\+Type)
+\item 
+void \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_domain_of_definition_a1fd85ce6ee41c6d1dc30b8b0eb0f951e}{add\+Point}} (float point)
+\item 
+bool \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_domain_of_definition_ac91578810653180cdf01c32f07211057}{contains}} (float x) const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the domain of definition for a function, including intervals and points. 
+
+This class is used to define the domain over which a function is defined. It supports adding both intervals and discrete points to the domain. An interval can be either inclusive or exclusive. 
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{classcsc450lib_1_1calc_1_1_domain_of_definition_aa72c6ed0797db2d9a224565fe8c155fb}\label{classcsc450lib_1_1calc_1_1_domain_of_definition_aa72c6ed0797db2d9a224565fe8c155fb} 
+\index{csc450lib::calc::DomainOfDefinition@{csc450lib::calc::DomainOfDefinition}!BoundType@{BoundType}}
+\index{BoundType@{BoundType}!csc450lib::calc::DomainOfDefinition@{csc450lib::calc::DomainOfDefinition}}
+\doxysubsubsection{\texorpdfstring{BoundType}{BoundType}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_domain_of_definition_aa72c6ed0797db2d9a224565fe8c155fb}{csc450lib\+::calc\+::\+Domain\+Of\+Definition\+::\+Bound\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+Represents the type of boundary for an interval (inclusive or exclusive). 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcsc450lib_1_1calc_1_1_domain_of_definition_a67f7a8e9c80010a563bab9d40ef4d88b}\label{classcsc450lib_1_1calc_1_1_domain_of_definition_a67f7a8e9c80010a563bab9d40ef4d88b} 
+\index{csc450lib::calc::DomainOfDefinition@{csc450lib::calc::DomainOfDefinition}!DomainOfDefinition@{DomainOfDefinition}}
+\index{DomainOfDefinition@{DomainOfDefinition}!csc450lib::calc::DomainOfDefinition@{csc450lib::calc::DomainOfDefinition}}
+\doxysubsubsection{\texorpdfstring{DomainOfDefinition()}{DomainOfDefinition()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily csc450lib\+::calc\+::\+Domain\+Of\+Definition\+::\+Domain\+Of\+Definition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor. Initializes an empty domain. \Hypertarget{classcsc450lib_1_1calc_1_1_domain_of_definition_a97d90e3e0fcb0dcdff198c75beb59d15}\label{classcsc450lib_1_1calc_1_1_domain_of_definition_a97d90e3e0fcb0dcdff198c75beb59d15} 
+\index{csc450lib::calc::DomainOfDefinition@{csc450lib::calc::DomainOfDefinition}!DomainOfDefinition@{DomainOfDefinition}}
+\index{DomainOfDefinition@{DomainOfDefinition}!csc450lib::calc::DomainOfDefinition@{csc450lib::calc::DomainOfDefinition}}
+\doxysubsubsection{\texorpdfstring{DomainOfDefinition()}{DomainOfDefinition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily csc450lib\+::calc\+::\+Domain\+Of\+Definition\+::\+Domain\+Of\+Definition (\begin{DoxyParamCaption}\item[{float}]{lower,  }\item[{\mbox{\hyperlink{classcsc450lib_1_1calc_1_1_domain_of_definition_aa72c6ed0797db2d9a224565fe8c155fb}{Bound\+Type}}}]{lower\+Type,  }\item[{float}]{upper,  }\item[{\mbox{\hyperlink{classcsc450lib_1_1calc_1_1_domain_of_definition_aa72c6ed0797db2d9a224565fe8c155fb}{Bound\+Type}}}]{upper\+Type }\end{DoxyParamCaption})}
+
+Constructor for creating a domain with a single interval. 
+\begin{DoxyParams}{Parameters}
+{\em lower} & The lower bound of the interval. \\
+\hline
+{\em lower\+Type} & The type of the lower bound (inclusive or exclusive). \\
+\hline
+{\em upper} & The upper bound of the interval. \\
+\hline
+{\em upper\+Type} & The type of the upper bound (inclusive or exclusive). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcsc450lib_1_1calc_1_1_domain_of_definition_a646aa36a8bf358a5fabe715038a7bf3e}\label{classcsc450lib_1_1calc_1_1_domain_of_definition_a646aa36a8bf358a5fabe715038a7bf3e} 
+\index{csc450lib::calc::DomainOfDefinition@{csc450lib::calc::DomainOfDefinition}!addInterval@{addInterval}}
+\index{addInterval@{addInterval}!csc450lib::calc::DomainOfDefinition@{csc450lib::calc::DomainOfDefinition}}
+\doxysubsubsection{\texorpdfstring{addInterval()}{addInterval()}}
+{\footnotesize\ttfamily void csc450lib\+::calc\+::\+Domain\+Of\+Definition\+::add\+Interval (\begin{DoxyParamCaption}\item[{float}]{lower,  }\item[{\mbox{\hyperlink{classcsc450lib_1_1calc_1_1_domain_of_definition_aa72c6ed0797db2d9a224565fe8c155fb}{Bound\+Type}}}]{lower\+Type,  }\item[{float}]{upper,  }\item[{\mbox{\hyperlink{classcsc450lib_1_1calc_1_1_domain_of_definition_aa72c6ed0797db2d9a224565fe8c155fb}{Bound\+Type}}}]{upper\+Type }\end{DoxyParamCaption})}
+
+Adds an interval to the domain. 
+\begin{DoxyParams}{Parameters}
+{\em lower} & The lower bound of the interval. \\
+\hline
+{\em lower\+Type} & The type of the lower bound (inclusive or exclusive). \\
+\hline
+{\em upper} & The upper bound of the interval. \\
+\hline
+{\em upper\+Type} & The type of the upper bound (inclusive or exclusive). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classcsc450lib_1_1calc_1_1_domain_of_definition_a1fd85ce6ee41c6d1dc30b8b0eb0f951e}\label{classcsc450lib_1_1calc_1_1_domain_of_definition_a1fd85ce6ee41c6d1dc30b8b0eb0f951e} 
+\index{csc450lib::calc::DomainOfDefinition@{csc450lib::calc::DomainOfDefinition}!addPoint@{addPoint}}
+\index{addPoint@{addPoint}!csc450lib::calc::DomainOfDefinition@{csc450lib::calc::DomainOfDefinition}}
+\doxysubsubsection{\texorpdfstring{addPoint()}{addPoint()}}
+{\footnotesize\ttfamily void csc450lib\+::calc\+::\+Domain\+Of\+Definition\+::add\+Point (\begin{DoxyParamCaption}\item[{float}]{point }\end{DoxyParamCaption})}
+
+Adds a single point to the domain. 
+\begin{DoxyParams}{Parameters}
+{\em point} & The point to add to the domain. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classcsc450lib_1_1calc_1_1_domain_of_definition_ac91578810653180cdf01c32f07211057}\label{classcsc450lib_1_1calc_1_1_domain_of_definition_ac91578810653180cdf01c32f07211057} 
+\index{csc450lib::calc::DomainOfDefinition@{csc450lib::calc::DomainOfDefinition}!contains@{contains}}
+\index{contains@{contains}!csc450lib::calc::DomainOfDefinition@{csc450lib::calc::DomainOfDefinition}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily bool csc450lib\+::calc\+::\+Domain\+Of\+Definition\+::contains (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption}) const}
+
+Checks if a value is within the domain. 
+\begin{DoxyParams}{Parameters}
+{\em x} & The value to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if x is within the domain, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/nickf/\+One\+Drive/\+Desktop/\+CSC450\+\_\+\+Project/calc/\+SDK/\+Headers/Domain\+Of\+Definition.\+h\end{DoxyCompactItemize}

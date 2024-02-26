@@ -1,0 +1,46 @@
+\doxysection{Function1\+D.\+h}
+\hypertarget{_function1_d_8h_source}{}\label{_function1_d_8h_source}\index{C:/Users/nickf/OneDrive/Desktop/CSC450\_Project/calc/SDK/Headers/Function1D.h@{C:/Users/nickf/OneDrive/Desktop/CSC450\_Project/calc/SDK/Headers/Function1D.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Function1D.h}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#ifndef\ CSC450LIB\_CALC\_FUNCTION1D\_H}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#define\ CSC450LIB\_CALC\_FUNCTION1D\_H}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}DomainOfDefinition.h"{}}\ \ \textcolor{comment}{//\ Include\ the\ header\ for\ DomainOfDefinition}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{namespace\ }csc450lib\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{namespace\ }calc\ \{}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classcsc450lib_1_1calc_1_1_function1_d}{Function1D}}\ \{}
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{//\ Constructors\ and\ virtual\ destructor\ for\ polymorphic\ use}}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_function1_d}{Function1D}}();}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_function1_d}{Function1D}}(\textcolor{keywordtype}{float}\ xmin,\ \textcolor{keywordtype}{float}\ xmax);}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_function1_d}{Function1D}}(std::shared\_ptr<DomainOfDefinition>\ d);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_function1_d_a1b3425b98e60e712ec1e5cb02e8753c0}{func}}(\textcolor{keywordtype}{float}\ x)\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{virtual}\ std::shared\_ptr<std::string>\ \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_function1_d_aada19880ea0adb19c0bf6221c4e6989e}{getExpressionMMA}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_function1_d_aa0eabd82e990c1da27d9166cf49e0b05}{isDefinedAt}}(\textcolor{keywordtype}{float}\ x)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_function1_d_afe1d701b8855093f7b1d07858f682dc8}{getLowerBound}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_function1_d_acef5cd8485478e00e186c40290a4b592}{getUpperBound}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{float}\ lowerBound\_;\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{float}\ upperBound\_;\ }
+\DoxyCodeLine{00064\ \ \ \ \ std::shared\_ptr<DomainOfDefinition>\ domain\_;\ }
+\DoxyCodeLine{00065\ \};}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \}\ \textcolor{comment}{//\ namespace\ calc}}
+\DoxyCodeLine{00069\ \}\ \textcolor{comment}{//\ namespace\ csc450lib}}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CSC450LIB\_CALC\_FUNCTION1D\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,35 @@
+Initial conditions:
+Position: (0, 3)
+Velocity: (5, 10)
+
+Bounce data:
+Bounce #1:
+Start Position: (0, 3)
+End Position: (10.25, 3)
+Start Velocity: (5, 10)
+End Velocity: (4.5, 9.01116)
+
+Bounce #2:
+Start Position: (10.25, 3)
+End Position: (18.575, 3)
+Start Velocity: (4.5, 9.01116)
+End Velocity: (4.05, 8.13532)
+
+Bounce #3:
+Start Position: (18.575, 3)
+End Position: (25.3386, 3)
+Start Velocity: (4.05, 8.13532)
+End Velocity: (3.645, 7.33436)
+
+Bounce #4:
+Start Position: (25.3386, 3)
+End Position: (30.8425, 3)
+Start Velocity: (3.645, 7.33436)
+End Velocity: (3.2805, 6.64258)
+
+Bounce #5:
+Start Position: (30.8425, 3)
+End Position: (35.3369, 3)
+Start Velocity: (3.2805, 6.64258)
+End Velocity: (2.95245, 6.02912)
+

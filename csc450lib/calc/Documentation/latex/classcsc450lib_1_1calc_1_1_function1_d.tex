@@ -1,0 +1,112 @@
+\doxysection{csc450lib\+::calc\+::Function1D Class Reference}
+\hypertarget{classcsc450lib_1_1calc_1_1_function1_d}{}\label{classcsc450lib_1_1calc_1_1_function1_d}\index{csc450lib::calc::Function1D@{csc450lib::calc::Function1D}}
+
+
+Abstract base class for a one-\/dimensional mathematical function.  
+
+
+
+
+{\ttfamily \#include $<$Function1\+D.\+h$>$}
+
+Inheritance diagram for csc450lib\+::calc\+::Function1D\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcsc450lib_1_1calc_1_1_function1_d}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcsc450lib_1_1calc_1_1_function1_d_a4897810a8ea5e1ea2b0468c86dc62bf2}\label{classcsc450lib_1_1calc_1_1_function1_d_a4897810a8ea5e1ea2b0468c86dc62bf2} 
+{\bfseries Function1D} (float xmin, float xmax)
+\item 
+\Hypertarget{classcsc450lib_1_1calc_1_1_function1_d_a27063145787cdeec607feb919596d0a3}\label{classcsc450lib_1_1calc_1_1_function1_d_a27063145787cdeec607feb919596d0a3} 
+{\bfseries Function1D} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_domain_of_definition}{Domain\+Of\+Definition}} $>$ d)
+\item 
+virtual float \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_function1_d_a1b3425b98e60e712ec1e5cb02e8753c0}{func}} (float x) const =0
+\item 
+virtual std\+::shared\+\_\+ptr$<$ std\+::string $>$ \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_function1_d_aada19880ea0adb19c0bf6221c4e6989e}{get\+Expression\+MMA}} () const =0
+\item 
+bool \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_function1_d_aa0eabd82e990c1da27d9166cf49e0b05}{is\+Defined\+At}} (float x) const
+\item 
+float \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_function1_d_afe1d701b8855093f7b1d07858f682dc8}{get\+Lower\+Bound}} () const
+\item 
+float \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_function1_d_acef5cd8485478e00e186c40290a4b592}{get\+Upper\+Bound}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class for a one-\/dimensional mathematical function. 
+
+This class provides a common interface for functions of a single variable. It supports evaluation of the function at a point, checking if a point is within the function\textquotesingle{}s domain, and obtaining the function\textquotesingle{}s domain bounds. It is designed to be extended by more specific function types. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcsc450lib_1_1calc_1_1_function1_d_a1b3425b98e60e712ec1e5cb02e8753c0}\label{classcsc450lib_1_1calc_1_1_function1_d_a1b3425b98e60e712ec1e5cb02e8753c0} 
+\index{csc450lib::calc::Function1D@{csc450lib::calc::Function1D}!func@{func}}
+\index{func@{func}!csc450lib::calc::Function1D@{csc450lib::calc::Function1D}}
+\doxysubsubsection{\texorpdfstring{func()}{func()}}
+{\footnotesize\ttfamily virtual float csc450lib\+::calc\+::\+Function1\+D\+::func (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Pure virtual function to evaluate the function at a given value of x. 
+\begin{DoxyParams}{Parameters}
+{\em x} & The input value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The function value at x. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_polynomial_function1_d_a72ffa94aa6ba6fadd48079f97924aa51}{csc450lib\+::calc\+::\+Polynomial\+Function1D}}.
+
+\Hypertarget{classcsc450lib_1_1calc_1_1_function1_d_aada19880ea0adb19c0bf6221c4e6989e}\label{classcsc450lib_1_1calc_1_1_function1_d_aada19880ea0adb19c0bf6221c4e6989e} 
+\index{csc450lib::calc::Function1D@{csc450lib::calc::Function1D}!getExpressionMMA@{getExpressionMMA}}
+\index{getExpressionMMA@{getExpressionMMA}!csc450lib::calc::Function1D@{csc450lib::calc::Function1D}}
+\doxysubsubsection{\texorpdfstring{getExpressionMMA()}{getExpressionMMA()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$ std\+::string $>$ csc450lib\+::calc\+::\+Function1\+D\+::get\+Expression\+MMA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Pure virtual function to get the function\textquotesingle{}s Mathematica-\/compatible expression. \begin{DoxyReturn}{Returns}
+A string containing the Mathematica-\/compatible expression. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_polynomial_function1_d_a44378c7ab5f6a243ce4135b5fddfcc0b}{csc450lib\+::calc\+::\+Polynomial\+Function1D}}.
+
+\Hypertarget{classcsc450lib_1_1calc_1_1_function1_d_afe1d701b8855093f7b1d07858f682dc8}\label{classcsc450lib_1_1calc_1_1_function1_d_afe1d701b8855093f7b1d07858f682dc8} 
+\index{csc450lib::calc::Function1D@{csc450lib::calc::Function1D}!getLowerBound@{getLowerBound}}
+\index{getLowerBound@{getLowerBound}!csc450lib::calc::Function1D@{csc450lib::calc::Function1D}}
+\doxysubsubsection{\texorpdfstring{getLowerBound()}{getLowerBound()}}
+{\footnotesize\ttfamily float csc450lib\+::calc\+::\+Function1\+D\+::get\+Lower\+Bound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the lower bound of the function\textquotesingle{}s domain. \begin{DoxyReturn}{Returns}
+The lower bound of the domain. 
+\end{DoxyReturn}
+\Hypertarget{classcsc450lib_1_1calc_1_1_function1_d_acef5cd8485478e00e186c40290a4b592}\label{classcsc450lib_1_1calc_1_1_function1_d_acef5cd8485478e00e186c40290a4b592} 
+\index{csc450lib::calc::Function1D@{csc450lib::calc::Function1D}!getUpperBound@{getUpperBound}}
+\index{getUpperBound@{getUpperBound}!csc450lib::calc::Function1D@{csc450lib::calc::Function1D}}
+\doxysubsubsection{\texorpdfstring{getUpperBound()}{getUpperBound()}}
+{\footnotesize\ttfamily float csc450lib\+::calc\+::\+Function1\+D\+::get\+Upper\+Bound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the upper bound of the function\textquotesingle{}s domain. \begin{DoxyReturn}{Returns}
+The upper bound of the domain. 
+\end{DoxyReturn}
+\Hypertarget{classcsc450lib_1_1calc_1_1_function1_d_aa0eabd82e990c1da27d9166cf49e0b05}\label{classcsc450lib_1_1calc_1_1_function1_d_aa0eabd82e990c1da27d9166cf49e0b05} 
+\index{csc450lib::calc::Function1D@{csc450lib::calc::Function1D}!isDefinedAt@{isDefinedAt}}
+\index{isDefinedAt@{isDefinedAt}!csc450lib::calc::Function1D@{csc450lib::calc::Function1D}}
+\doxysubsubsection{\texorpdfstring{isDefinedAt()}{isDefinedAt()}}
+{\footnotesize\ttfamily bool csc450lib\+::calc\+::\+Function1\+D\+::is\+Defined\+At (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption}) const}
+
+Checks if the function is defined at a given value of x. 
+\begin{DoxyParams}{Parameters}
+{\em x} & The value to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the function is defined at x, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/nickf/\+One\+Drive/\+Desktop/\+CSC450\+\_\+\+Project/calc/\+SDK/\+Headers/Function1\+D.\+h\end{DoxyCompactItemize}
