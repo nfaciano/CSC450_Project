@@ -1,0 +1,32 @@
+\doxysection{Function1\+Dfrom\+ND.\+h}
+\hypertarget{_function1_dfrom_n_d_8h_source}{}\label{_function1_dfrom_n_d_8h_source}\index{csc450lib/linalg/SDK/Headers/Function1DfromND.h@{csc450lib/linalg/SDK/Headers/Function1DfromND.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CSC450LIB\_LINALG\_FUNCTION1DFROMND\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CSC450LIB\_LINALG\_FUNCTION1DFROMND\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}FunctionND.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Function1D.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }csc450lib\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{namespace\ }linalg\ \{}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_function1_dfrom_n_d}{Function1DfromND}}\ :\ \textcolor{keyword}{public}\ calc::Function1D\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_function1_dfrom_n_d_a8139c567568f001bd1ec1042e4ffc89e}{Function1DfromND}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_function_n_d}{FunctionND}}\&\ fn,\ \textcolor{keyword}{const}\ std::vector<float>\&\ x0,\ \textcolor{keyword}{const}\ std::vector<float>\&\ u\_vect);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_function1_dfrom_n_d_a781a64b210081a7c0472837cffba26bf}{func}}(\textcolor{keywordtype}{float}\ u)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_function_n_d}{FunctionND}}\&\ fn\_;\ \textcolor{comment}{//\ The\ N-\/dimensional\ function}}
+\DoxyCodeLine{00036\ \ \ \ \ std::vector<float>\ x0\_;\ \textcolor{comment}{//\ Origin\ in\ N-\/dimensional\ space}}
+\DoxyCodeLine{00037\ \ \ \ \ std::vector<float>\ u\_vect\_;\ \textcolor{comment}{//\ Direction\ vector\ for\ the\ U\ axis}}
+\DoxyCodeLine{00038\ \};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \}\ \textcolor{comment}{//\ namespace\ linalg}}
+\DoxyCodeLine{00041\ \}\ \textcolor{comment}{//\ namespace\ csc450lib}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CSC450LIB\_LINALG\_FUNCTION1DFROMND\_H}}
+
+\end{DoxyCode}

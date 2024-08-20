@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\Development\Source\domainOfDefinition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\Development\Source\Function1D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\Development\Source\PolynomialFunction1D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\Development\Source\BisectionSolver1D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\Development\Source\NewtonRaphsonSolver1D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\calc\Development\Source\SecantSolver1D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\random\Development\Source\CSC450Exception.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\random\Development\Source\BallSimulation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\random\Development\Source\Surface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\random\Development\Source\Ball.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\linalg\Development\Source\FunctionND.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\linalg\Development\Source\GroundFunction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\linalg\Development\Source\Optimizer1D_gss.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\linalg\Development\Source\Optimizer1D_parabolic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\linalg\Development\Source\Function1DfromND.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\linalg\Development\Source\Optimizer1D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\linalg\Development\Source\Optimizer1D_steepestDescent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\nickf\OneDrive\Desktop\CSC450_Project\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BB93FED4-C188-3BA0-9C66-6F0CDCE6F104}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -13,10 +13,10 @@ Surface::Surface(float alpha, float xmin, float xmax)
 // Concrete implementation of the pure virtual function 'func' from Function1D
 // Update func to match the surface equation
 float Surface::func(float x) const {
-    return (3); // Ground equation
+    return (sin(x)+2); // Ground equation
 }
 float Surface::dfunc(float x) const {
-    return (0);  // Derivative of sin(x) is cos(x)
+    return (cos(x));  // Derivative 
 }
 
 

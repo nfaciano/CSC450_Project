@@ -1,0 +1,10 @@
+^C:\USERS\NICKF\ONEDRIVE\DESKTOP\CSC450_PROJECT\DEBUG\CMAKEFILES\5FAA5817D595B5DE7980E149028AD2EC\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/nickf/OneDrive/Desktop/CSC450_Project -BC:/Users/nickf/OneDrive/Desktop/CSC450_Project/debug --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/nickf/OneDrive/Desktop/CSC450_Project/debug/CSC450_PROJECT.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

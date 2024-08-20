@@ -1,0 +1,43 @@
+\doxysection{Optimizer1\+D.\+h}
+\hypertarget{_optimizer1_d_8h_source}{}\label{_optimizer1_d_8h_source}\index{csc450lib/linalg/SDK/Headers/Optimizer1D.h@{csc450lib/linalg/SDK/Headers/Optimizer1D.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CSC450LIB\_LINALG\_OPTIMIZER1D\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CSC450LIB\_LINALG\_OPTIMIZER1D\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Function1D.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}OptimizerRecord1D.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }csc450lib\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{namespace\ }linalg\ \{}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d}{Optimizer1D}}\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d_af45a1488812e0ed8c06de292cd53a2a2}{Optimizer1D}}(std::shared\_ptr<calc::Function1D>\ f);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d_aa3a8190dc4e20f8b3de077a7e602ad29}{\string~Optimizer1D}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{//\ Prevent\ copy\ and\ move\ operations}}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d_af45a1488812e0ed8c06de292cd53a2a2}{Optimizer1D}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d}{Optimizer1D}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d_af45a1488812e0ed8c06de292cd53a2a2}{Optimizer1D}}(\mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d}{Optimizer1D}}\&\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d}{Optimizer1D}}\&\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d}{Optimizer1D}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d}{Optimizer1D}}\&\ operator=(\mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d}{Optimizer1D}}\&\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d_ad2482254c076f0511fa499057d316332}{setFunction}}(std::shared\_ptr<calc::Function1D>\ f);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00047\ \ \ \ \ std::shared\_ptr<const\ calc::Function1D>\ \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d_ac73b37ba9358d1008926e801e3d3d2bf}{getFunction}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer_record1_d}{OptimizerRecord1D}}\ \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d_a1c9b21585b0a5675abd26b5cfc95c954}{minimize}}(\textcolor{keywordtype}{float}\ startX,\ \textcolor{keywordtype}{float}\ xMin,\ \textcolor{keywordtype}{float}\ xMax,}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ tol,\ \textcolor{keywordtype}{int}\ maxNumIters)\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00063\ \ \ \ \ std::shared\_ptr<calc::Function1D>\ func\_;\ \ \textcolor{comment}{//\ Function\ to\ be\ optimized}}
+\DoxyCodeLine{00064\ \};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \}\ \textcolor{comment}{//\ namespace\ linalg}}
+\DoxyCodeLine{00067\ \}\ \textcolor{comment}{//\ namespace\ csc450lib}}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CSC450LIB\_LINALG\_OPTIMIZER1D\_H}}
+
+\end{DoxyCode}

@@ -9,7 +9,7 @@ namespace csc450lib {
             float fb = f->func(b);
             
             // Replace standard exception with CSC450Exception
-FAIL_CONDITION(fa * fb >= 0, ErrorCode::FUNCTION_NOT_DEFINED_AT_EVALUATION_POINT, "f(a) and f(b) must have opposite signs");
+            FAIL_CONDITION(fa * fb >= 0, ErrorCode::FUNCTION_NOT_DEFINED_AT_EVALUATION_POINT, "f(a) and f(b) must have opposite signs");
             float c, fc;
             int iter = 0;
             do {

@@ -1,0 +1,4 @@
+Optimizer,OptX,OptVal,NumIters,Success
+GSS,2.00012,1,20,Yes
+Parabolic,2,1,1,Yes
+Steepest Descent,1.99899,1,4136,Yes

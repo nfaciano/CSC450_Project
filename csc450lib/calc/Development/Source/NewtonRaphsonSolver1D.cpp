@@ -1,7 +1,7 @@
 #include "NewtonRaphsonSolver1D.h"
 #include "CSC450Exception.h"
 #include <cmath> // Make sure to include cmath for fabs
-
+#include <iostream>
 namespace csc450lib {
     namespace calc {
 

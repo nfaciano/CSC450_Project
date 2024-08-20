@@ -1,0 +1,23 @@
+\doxysection{Newton\+Raphson\+Solver1\+D.\+h}
+\hypertarget{_newton_raphson_solver1_d_8h_source}{}\label{_newton_raphson_solver1_d_8h_source}\index{C:/Users/nickf/OneDrive/Desktop/CSC450\_Project/csc450lib/calc/SDK/Headers/NewtonRaphsonSolver1D.h@{C:/Users/nickf/OneDrive/Desktop/CSC450\_Project/csc450lib/calc/SDK/Headers/NewtonRaphsonSolver1D.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ NEWTON\_RAPHSON\_SOLVER\_1D\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ NEWTON\_RAPHSON\_SOLVER\_1D\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}NonlinearSolver1D.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Function1D.h"{}}\ \textcolor{comment}{//\ Include\ this\ if\ Function1D\ is\ defined\ in\ a\ separate\ header}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{namespace\ }csc450lib\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{namespace\ }calc\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classcsc450lib_1_1calc_1_1_newton_raphson_solver1_d}{NewtonRaphsonSolver1D}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_nonlinear_solver1_d}{NonlinearSolver1D}}\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structcsc450lib_1_1calc_1_1_nonlinear_solver_record1_d}{NonlinearSolverRecord1D}}\ \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_newton_raphson_solver1_d_ae60bb4b98a843321d84700933e374429}{solve}}(std::shared\_ptr<Function1D>\ f,\ \textcolor{keywordtype}{float}\ a,\ \textcolor{keywordtype}{float}\ b,\ \textcolor{keywordtype}{int}\ n,\ \textcolor{keywordtype}{float}\ tol)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00027\ \ \ \ \ \}\ \textcolor{comment}{//\ namespace\ calc}}
+\DoxyCodeLine{00028\ \}\ \textcolor{comment}{//\ namespace\ csc450lib}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ NEWTON\_RAPHSON\_SOLVER\_1D\_H}}
+
+\end{DoxyCode}

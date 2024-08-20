@@ -1,0 +1,63 @@
+\doxysection{csc450lib\+::calc\+::Newton\+Raphson\+Solver1D Class Reference}
+\hypertarget{classcsc450lib_1_1calc_1_1_newton_raphson_solver1_d}{}\label{classcsc450lib_1_1calc_1_1_newton_raphson_solver1_d}\index{csc450lib::calc::NewtonRaphsonSolver1D@{csc450lib::calc::NewtonRaphsonSolver1D}}
+
+
+Implements the Newton-\/\+Raphson method for finding roots of a nonlinear equation.  
+
+
+
+
+{\ttfamily \#include $<$Newton\+Raphson\+Solver1\+D.\+h$>$}
+
+Inheritance diagram for csc450lib\+::calc\+::Newton\+Raphson\+Solver1D\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcsc450lib_1_1calc_1_1_newton_raphson_solver1_d}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structcsc450lib_1_1calc_1_1_nonlinear_solver_record1_d}{Nonlinear\+Solver\+Record1D}} \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_newton_raphson_solver1_d_ae60bb4b98a843321d84700933e374429}{solve}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_function1_d}{Function1D}} $>$ f, float a, float b, int n, float tol) const override
+\begin{DoxyCompactList}\small\item\em Solve the nonlinear equation using the Newton-\/\+Raphson method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implements the Newton-\/\+Raphson method for finding roots of a nonlinear equation. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcsc450lib_1_1calc_1_1_newton_raphson_solver1_d_ae60bb4b98a843321d84700933e374429}\label{classcsc450lib_1_1calc_1_1_newton_raphson_solver1_d_ae60bb4b98a843321d84700933e374429} 
+\index{csc450lib::calc::NewtonRaphsonSolver1D@{csc450lib::calc::NewtonRaphsonSolver1D}!solve@{solve}}
+\index{solve@{solve}!csc450lib::calc::NewtonRaphsonSolver1D@{csc450lib::calc::NewtonRaphsonSolver1D}}
+\doxysubsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcsc450lib_1_1calc_1_1_nonlinear_solver_record1_d}{Nonlinear\+Solver\+Record1D}} csc450lib\+::calc\+::\+Newton\+Raphson\+Solver1\+D\+::solve (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_function1_d}{Function1D}} $>$}]{f,  }\item[{float}]{a,  }\item[{float}]{b,  }\item[{int}]{n,  }\item[{float}]{tol }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Solve the nonlinear equation using the Newton-\/\+Raphson method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & The function for which to find a root. \\
+\hline
+{\em a} & Unused parameter in this method, included for interface compatibility. \\
+\hline
+{\em b} & Unused parameter in this method, included for interface compatibility. \\
+\hline
+{\em n} & The maximum number of iterations. \\
+\hline
+{\em tol} & The tolerance for stopping criteria. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \doxylink{structcsc450lib_1_1calc_1_1_nonlinear_solver_record1_d}{Nonlinear\+Solver\+Record1D} containing the solution information. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_nonlinear_solver1_d_ac1faf29a1ecdc52c2be4b1aa4aebdf04}{csc450lib\+::calc\+::\+Nonlinear\+Solver1D}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/nickf/\+One\+Drive/\+Desktop/\+CSC450\+\_\+\+Project/csc450lib/calc/\+SDK/\+Headers/Newton\+Raphson\+Solver1\+D.\+h\end{DoxyCompactItemize}

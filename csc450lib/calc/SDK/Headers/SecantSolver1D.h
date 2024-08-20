@@ -22,6 +22,7 @@ namespace csc450lib {
              * @return A NonlinearSolverRecord1D object containing the results of the method.
              */
             NonlinearSolverRecord1D solve(std::shared_ptr<Function1D> f, float x0, float x1, int n, float tol) const override;
+
         };
 
     } // namespace calc

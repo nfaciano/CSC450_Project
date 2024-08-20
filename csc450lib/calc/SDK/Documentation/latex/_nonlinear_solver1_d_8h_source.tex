@@ -1,0 +1,33 @@
+\doxysection{Nonlinear\+Solver1\+D.\+h}
+\hypertarget{_nonlinear_solver1_d_8h_source}{}\label{_nonlinear_solver1_d_8h_source}\index{C:/Users/nickf/OneDrive/Desktop/CSC450\_Project/csc450lib/calc/SDK/Headers/NonlinearSolver1D.h@{C:/Users/nickf/OneDrive/Desktop/CSC450\_Project/csc450lib/calc/SDK/Headers/NonlinearSolver1D.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ NONLINEARSOLVER1D\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ NONLINEARSOLVER1D\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Function1D.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{namespace\ }csc450lib\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{namespace\ }calc\ \{}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structcsc450lib_1_1calc_1_1_nonlinear_solver_record1_d}{NonlinearSolverRecord1D}}\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structcsc450lib_1_1calc_1_1_nonlinear_solver_record1_d_ae61ce5bbb5e84c0da8211204392fd873}{xStar}};\ }
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structcsc450lib_1_1calc_1_1_nonlinear_solver_record1_d_a97df88420207fa8863952a13234b61e9}{valStar}};\ }
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcsc450lib_1_1calc_1_1_nonlinear_solver_record1_d_ace03a5e6231fdf768326a03b1963bb0a}{numIter}};\ }
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structcsc450lib_1_1calc_1_1_nonlinear_solver_record1_d_ae4f8f7ecf6b9685aed9d6e834c212e02}{isSuccess}};\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structcsc450lib_1_1calc_1_1_nonlinear_solver_record1_d_a89b8060c903bb3640c30e9cce3cb932d}{NonlinearSolverRecord1D}}(\textcolor{keywordtype}{float}\ \mbox{\hyperlink{structcsc450lib_1_1calc_1_1_nonlinear_solver_record1_d_ae61ce5bbb5e84c0da8211204392fd873}{xStar}},\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structcsc450lib_1_1calc_1_1_nonlinear_solver_record1_d_a97df88420207fa8863952a13234b61e9}{valStar}},\ \textcolor{keywordtype}{int}\ n,\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structcsc450lib_1_1calc_1_1_nonlinear_solver_record1_d_ae4f8f7ecf6b9685aed9d6e834c212e02}{isSuccess}})}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{structcsc450lib_1_1calc_1_1_nonlinear_solver_record1_d_ae61ce5bbb5e84c0da8211204392fd873}{xStar}}(\mbox{\hyperlink{structcsc450lib_1_1calc_1_1_nonlinear_solver_record1_d_ae61ce5bbb5e84c0da8211204392fd873}{xStar}}),\ \mbox{\hyperlink{structcsc450lib_1_1calc_1_1_nonlinear_solver_record1_d_a97df88420207fa8863952a13234b61e9}{valStar}}(\mbox{\hyperlink{structcsc450lib_1_1calc_1_1_nonlinear_solver_record1_d_a97df88420207fa8863952a13234b61e9}{valStar}}),\ \mbox{\hyperlink{structcsc450lib_1_1calc_1_1_nonlinear_solver_record1_d_ace03a5e6231fdf768326a03b1963bb0a}{numIter}}(n),\ \mbox{\hyperlink{structcsc450lib_1_1calc_1_1_nonlinear_solver_record1_d_ae4f8f7ecf6b9685aed9d6e834c212e02}{isSuccess}}(\mbox{\hyperlink{structcsc450lib_1_1calc_1_1_nonlinear_solver_record1_d_ae4f8f7ecf6b9685aed9d6e834c212e02}{isSuccess}})\ \{\}}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classcsc450lib_1_1calc_1_1_nonlinear_solver1_d}{NonlinearSolver1D}}\ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{structcsc450lib_1_1calc_1_1_nonlinear_solver_record1_d}{NonlinearSolverRecord1D}}\ \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_nonlinear_solver1_d_ac1faf29a1ecdc52c2be4b1aa4aebdf04}{solve}}(std::shared\_ptr<Function1D>\ f,\ \textcolor{keywordtype}{float}\ a,\ \textcolor{keywordtype}{float}\ b,\ \textcolor{keywordtype}{int}\ n,\ \textcolor{keywordtype}{float}\ tol)\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \}\ \textcolor{comment}{//\ namespace\ calc}}
+\DoxyCodeLine{00048\ \}\ \textcolor{comment}{//\ namespace\ csc450lib}}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ NONLINEARSOLVER1D\_H}}
+
+\end{DoxyCode}

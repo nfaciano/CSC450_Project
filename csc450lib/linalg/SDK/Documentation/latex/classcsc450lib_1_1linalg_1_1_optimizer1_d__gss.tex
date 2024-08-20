@@ -1,0 +1,111 @@
+\doxysection{csc450lib\+::linalg\+::Optimizer1\+D\+\_\+gss Class Reference}
+\hypertarget{classcsc450lib_1_1linalg_1_1_optimizer1_d__gss}{}\label{classcsc450lib_1_1linalg_1_1_optimizer1_d__gss}\index{csc450lib::linalg::Optimizer1D\_gss@{csc450lib::linalg::Optimizer1D\_gss}}
+
+
+A class that performs optimization using the golden-\/section search method.  
+
+
+
+
+{\ttfamily \#include $<$Optimizer1\+D\+\_\+gss.\+h$>$}
+
+Inheritance diagram for csc450lib\+::linalg\+::Optimizer1\+D\+\_\+gss\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcsc450lib_1_1linalg_1_1_optimizer1_d__gss}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer_record1_d}{Optimizer\+Record1D}} \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d__gss_a0fda0f8fdf681dc9df93e7ad007e7da0}{minimize}} (float startX, float x\+Min, float x\+Max, float tol, int max\+Num\+Iters) const override
+\begin{DoxyCompactList}\small\item\em Performs minimization using the golden-\/section search method. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d__gss_af45a1488812e0ed8c06de292cd53a2a2}{Optimizer1D}} (std\+::shared\+\_\+ptr$<$ calc\+::\+Function1D $>$ f)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{classcsc450lib_1_1linalg_1_1_optimizer1_d}{Optimizer1D} object. \end{DoxyCompactList}\item 
+\Hypertarget{classcsc450lib_1_1linalg_1_1_optimizer1_d__gss_a27de51cf5f07aeaa682ff1b48b40824f}\label{classcsc450lib_1_1linalg_1_1_optimizer1_d__gss_a27de51cf5f07aeaa682ff1b48b40824f} 
+{\bfseries Optimizer1D} (const \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d}{Optimizer1D}} \&)=delete
+\item 
+\Hypertarget{classcsc450lib_1_1linalg_1_1_optimizer1_d__gss_a3fb879e0a515c840a362a2950706f0f8}\label{classcsc450lib_1_1linalg_1_1_optimizer1_d__gss_a3fb879e0a515c840a362a2950706f0f8} 
+{\bfseries Optimizer1D} (\mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d}{Optimizer1D}} \&\&)=delete
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d}{csc450lib\+::linalg\+::\+Optimizer1D}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d_af45a1488812e0ed8c06de292cd53a2a2}{Optimizer1D}} (std\+::shared\+\_\+ptr$<$ calc\+::\+Function1D $>$ f)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{classcsc450lib_1_1linalg_1_1_optimizer1_d}{Optimizer1D} object. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Optimizer1D} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for polymorphic deletion. \end{DoxyCompactList}\item 
+{\bfseries Optimizer1D} (const \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d}{Optimizer1D}} \&)=delete
+\item 
+{\bfseries Optimizer1D} (\mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d}{Optimizer1D}} \&\&)=delete
+\item 
+\mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d}{Optimizer1D}} \& {\bfseries operator=} (const \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d}{Optimizer1D}} \&)=delete
+\item 
+\mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d}{Optimizer1D}} \& {\bfseries operator=} (\mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d}{Optimizer1D}} \&\&)=delete
+\item 
+void \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d_ad2482254c076f0511fa499057d316332}{set\+Function}} (std\+::shared\+\_\+ptr$<$ calc\+::\+Function1D $>$ f)
+\begin{DoxyCompactList}\small\item\em Set the function object to be optimized. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ const calc\+::\+Function1D $>$ \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d_ac73b37ba9358d1008926e801e3d3d2bf}{get\+Function}} () const
+\begin{DoxyCompactList}\small\item\em Get the function object being optimized. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d}{csc450lib\+::linalg\+::\+Optimizer1D}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ calc\+::\+Function1D $>$ {\bfseries func\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that performs optimization using the golden-\/section search method. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcsc450lib_1_1linalg_1_1_optimizer1_d__gss_a0fda0f8fdf681dc9df93e7ad007e7da0}\label{classcsc450lib_1_1linalg_1_1_optimizer1_d__gss_a0fda0f8fdf681dc9df93e7ad007e7da0} 
+\index{csc450lib::linalg::Optimizer1D\_gss@{csc450lib::linalg::Optimizer1D\_gss}!minimize@{minimize}}
+\index{minimize@{minimize}!csc450lib::linalg::Optimizer1D\_gss@{csc450lib::linalg::Optimizer1D\_gss}}
+\doxysubsubsection{\texorpdfstring{minimize()}{minimize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer_record1_d}{Optimizer\+Record1D}} csc450lib\+::linalg\+::\+Optimizer1\+D\+\_\+gss\+::minimize (\begin{DoxyParamCaption}\item[{float}]{startX,  }\item[{float}]{x\+Min,  }\item[{float}]{x\+Max,  }\item[{float}]{tol,  }\item[{int}]{max\+Num\+Iters }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Performs minimization using the golden-\/section search method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em startX} & Starting point of the search \\
+\hline
+{\em x\+Min} & Minimum bound of the search interval \\
+\hline
+{\em x\+Max} & Maximum bound of the search interval \\
+\hline
+{\em tol} & Tolerance for the stopping criterion \\
+\hline
+{\em max\+Num\+Iters} & Maximum number of iterations \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{classcsc450lib_1_1linalg_1_1_optimizer_record1_d}{Optimizer\+Record1D} A record of the optimization process 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d_a1c9b21585b0a5675abd26b5cfc95c954}{csc450lib\+::linalg\+::\+Optimizer1D}}.
+
+\Hypertarget{classcsc450lib_1_1linalg_1_1_optimizer1_d__gss_af45a1488812e0ed8c06de292cd53a2a2}\label{classcsc450lib_1_1linalg_1_1_optimizer1_d__gss_af45a1488812e0ed8c06de292cd53a2a2} 
+\index{csc450lib::linalg::Optimizer1D\_gss@{csc450lib::linalg::Optimizer1D\_gss}!Optimizer1D@{Optimizer1D}}
+\index{Optimizer1D@{Optimizer1D}!csc450lib::linalg::Optimizer1D\_gss@{csc450lib::linalg::Optimizer1D\_gss}}
+\doxysubsubsection{\texorpdfstring{Optimizer1D()}{Optimizer1D()}}
+{\footnotesize\ttfamily csc450lib\+::linalg\+::\+Optimizer1\+D\+::\+Optimizer1D (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ calc\+::\+Function1D $>$}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new \doxylink{classcsc450lib_1_1linalg_1_1_optimizer1_d}{Optimizer1D} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & Function to be optimized, wrapped in a shared pointer \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+csc450lib/linalg/\+SDK/\+Headers/Optimizer1\+D\+\_\+gss.\+h\end{DoxyCompactItemize}

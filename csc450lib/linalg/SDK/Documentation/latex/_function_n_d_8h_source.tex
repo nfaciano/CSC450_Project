@@ -1,0 +1,40 @@
+\doxysection{Function\+ND.\+h}
+\hypertarget{_function_n_d_8h_source}{}\label{_function_n_d_8h_source}\index{csc450lib/linalg/SDK/Headers/FunctionND.h@{csc450lib/linalg/SDK/Headers/FunctionND.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ FUNCTIONND\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ FUNCTIONND\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{namespace\ }csc450lib\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }linalg\ \{}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_function_n_d}{FunctionND}}\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_function_n_d_a12004f86441273f98a3bc844f175ba77}{FunctionND}}(\textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_function_n_d_a2ebb3fece56e785782703b433a8454ef}{\string~FunctionND}}();}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//\ Preventing\ copy\ and\ assignment}}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_function_n_d_a12004f86441273f98a3bc844f175ba77}{FunctionND}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_function_n_d}{FunctionND}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_function_n_d}{FunctionND}}\&\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_function_n_d}{FunctionND}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_function_n_d_a75b71df8357234b66cb8743ebb048dbe}{func}}(\textcolor{keyword}{const}\ std::vector<float>\&\ x)\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{virtual}\ std::vector<float>\ \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_function_n_d_ab57db3fb256541c2ac582bb36ffc21a7}{grad}}(\textcolor{keyword}{const}\ std::vector<float>\&\ x)\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{int}\ dim\_;\ \ \textcolor{comment}{//\ Dimension\ of\ the\ function's\ input\ set}}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{bool}\ isCorrectDimension(\textcolor{keyword}{const}\ std::vector<float>\&\ x)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00053\ \};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \}\ \ \textcolor{comment}{//\ namespace\ linalg}}
+\DoxyCodeLine{00056\ \}\ \ \textcolor{comment}{//\ namespace\ csc450lib}}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ FUNCTIONND\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,114 @@
+\doxysection{csc450lib\+::linalg\+::Function\+ND Class Reference}
+\hypertarget{classcsc450lib_1_1linalg_1_1_function_n_d}{}\label{classcsc450lib_1_1linalg_1_1_function_n_d}\index{csc450lib::linalg::FunctionND@{csc450lib::linalg::FunctionND}}
+
+
+Abstract class for N-\/dimensional functions.  
+
+
+
+
+{\ttfamily \#include $<$Function\+ND.\+h$>$}
+
+Inheritance diagram for csc450lib\+::linalg\+::Function\+ND\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcsc450lib_1_1linalg_1_1_function_n_d}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_function_n_d_a12004f86441273f98a3bc844f175ba77}{Function\+ND}} (int n)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{classcsc450lib_1_1linalg_1_1_function_n_d}{Function\+ND} object. \end{DoxyCompactList}\item 
+\Hypertarget{classcsc450lib_1_1linalg_1_1_function_n_d_a2ebb3fece56e785782703b433a8454ef}\label{classcsc450lib_1_1linalg_1_1_function_n_d_a2ebb3fece56e785782703b433a8454ef} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Function\+ND} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \doxylink{classcsc450lib_1_1linalg_1_1_function_n_d}{Function\+ND} object. \end{DoxyCompactList}\item 
+\Hypertarget{classcsc450lib_1_1linalg_1_1_function_n_d_a9e4d9b58a584850f0b50af6d6c8f0162}\label{classcsc450lib_1_1linalg_1_1_function_n_d_a9e4d9b58a584850f0b50af6d6c8f0162} 
+{\bfseries Function\+ND} (const \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_function_n_d}{Function\+ND}} \&)=delete
+\item 
+\Hypertarget{classcsc450lib_1_1linalg_1_1_function_n_d_a816423ab8d7fb7adc1020490bc01d0dc}\label{classcsc450lib_1_1linalg_1_1_function_n_d_a816423ab8d7fb7adc1020490bc01d0dc} 
+\mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_function_n_d}{Function\+ND}} \& {\bfseries operator=} (const \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_function_n_d}{Function\+ND}} \&)=delete
+\item 
+virtual float \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_function_n_d_a75b71df8357234b66cb8743ebb048dbe}{func}} (const std\+::vector$<$ float $>$ \&x) const =0
+\begin{DoxyCompactList}\small\item\em Calculate the function value at a given point in N-\/dimensional space. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ float $>$ \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_function_n_d_ab57db3fb256541c2ac582bb36ffc21a7}{grad}} (const std\+::vector$<$ float $>$ \&x) const =0
+\begin{DoxyCompactList}\small\item\em Calculate the gradient of the function at a given point in N-\/dimensional space. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcsc450lib_1_1linalg_1_1_function_n_d_ab62807c61dc96b2a33e4b6aee66ea468}\label{classcsc450lib_1_1linalg_1_1_function_n_d_ab62807c61dc96b2a33e4b6aee66ea468} 
+int {\bfseries dim\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class for N-\/dimensional functions. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcsc450lib_1_1linalg_1_1_function_n_d_a12004f86441273f98a3bc844f175ba77}\label{classcsc450lib_1_1linalg_1_1_function_n_d_a12004f86441273f98a3bc844f175ba77} 
+\index{csc450lib::linalg::FunctionND@{csc450lib::linalg::FunctionND}!FunctionND@{FunctionND}}
+\index{FunctionND@{FunctionND}!csc450lib::linalg::FunctionND@{csc450lib::linalg::FunctionND}}
+\doxysubsubsection{\texorpdfstring{FunctionND()}{FunctionND()}}
+{\footnotesize\ttfamily csc450lib\+::linalg\+::\+Function\+ND\+::\+Function\+ND (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new \doxylink{classcsc450lib_1_1linalg_1_1_function_n_d}{Function\+ND} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Dimension of the function\textquotesingle{}s input set \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcsc450lib_1_1linalg_1_1_function_n_d_a75b71df8357234b66cb8743ebb048dbe}\label{classcsc450lib_1_1linalg_1_1_function_n_d_a75b71df8357234b66cb8743ebb048dbe} 
+\index{csc450lib::linalg::FunctionND@{csc450lib::linalg::FunctionND}!func@{func}}
+\index{func@{func}!csc450lib::linalg::FunctionND@{csc450lib::linalg::FunctionND}}
+\doxysubsubsection{\texorpdfstring{func()}{func()}}
+{\footnotesize\ttfamily virtual float csc450lib\+::linalg\+::\+Function\+ND\+::func (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ float $>$ \&}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Calculate the function value at a given point in N-\/dimensional space. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Point in N-\/dimensional space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float Function value at point x 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_ground_function_a3693bb4b6042f0f0c6e3f589c2da2169}{csc450lib\+::linalg\+::\+Ground\+Function}}.
+
+\Hypertarget{classcsc450lib_1_1linalg_1_1_function_n_d_ab57db3fb256541c2ac582bb36ffc21a7}\label{classcsc450lib_1_1linalg_1_1_function_n_d_ab57db3fb256541c2ac582bb36ffc21a7} 
+\index{csc450lib::linalg::FunctionND@{csc450lib::linalg::FunctionND}!grad@{grad}}
+\index{grad@{grad}!csc450lib::linalg::FunctionND@{csc450lib::linalg::FunctionND}}
+\doxysubsubsection{\texorpdfstring{grad()}{grad()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$ float $>$ csc450lib\+::linalg\+::\+Function\+ND\+::grad (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ float $>$ \&}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Calculate the gradient of the function at a given point in N-\/dimensional space. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Point in N-\/dimensional space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$float$>$ Gradient of the function at point x 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_ground_function_a5f8a2b0200e959cdc8102fa7c1e6fce7}{csc450lib\+::linalg\+::\+Ground\+Function}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+csc450lib/linalg/\+SDK/\+Headers/Function\+ND.\+h\end{DoxyCompactItemize}

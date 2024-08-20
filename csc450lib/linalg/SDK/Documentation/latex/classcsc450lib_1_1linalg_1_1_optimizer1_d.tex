@@ -1,0 +1,136 @@
+\doxysection{csc450lib\+::linalg\+::Optimizer1D Class Reference}
+\hypertarget{classcsc450lib_1_1linalg_1_1_optimizer1_d}{}\label{classcsc450lib_1_1linalg_1_1_optimizer1_d}\index{csc450lib::linalg::Optimizer1D@{csc450lib::linalg::Optimizer1D}}
+
+
+Abstract class representing an optimizer for one-\/dimensional functions.  
+
+
+
+
+{\ttfamily \#include $<$Optimizer1\+D.\+h$>$}
+
+Inheritance diagram for csc450lib\+::linalg\+::Optimizer1D\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.314554cm]{classcsc450lib_1_1linalg_1_1_optimizer1_d}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d_af45a1488812e0ed8c06de292cd53a2a2}{Optimizer1D}} (std\+::shared\+\_\+ptr$<$ calc\+::\+Function1D $>$ f)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{classcsc450lib_1_1linalg_1_1_optimizer1_d}{Optimizer1D} object. \end{DoxyCompactList}\item 
+\Hypertarget{classcsc450lib_1_1linalg_1_1_optimizer1_d_aa3a8190dc4e20f8b3de077a7e602ad29}\label{classcsc450lib_1_1linalg_1_1_optimizer1_d_aa3a8190dc4e20f8b3de077a7e602ad29} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Optimizer1D} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for polymorphic deletion. \end{DoxyCompactList}\item 
+\Hypertarget{classcsc450lib_1_1linalg_1_1_optimizer1_d_a27de51cf5f07aeaa682ff1b48b40824f}\label{classcsc450lib_1_1linalg_1_1_optimizer1_d_a27de51cf5f07aeaa682ff1b48b40824f} 
+{\bfseries Optimizer1D} (const \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d}{Optimizer1D}} \&)=delete
+\item 
+\Hypertarget{classcsc450lib_1_1linalg_1_1_optimizer1_d_a3fb879e0a515c840a362a2950706f0f8}\label{classcsc450lib_1_1linalg_1_1_optimizer1_d_a3fb879e0a515c840a362a2950706f0f8} 
+{\bfseries Optimizer1D} (\mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d}{Optimizer1D}} \&\&)=delete
+\item 
+\Hypertarget{classcsc450lib_1_1linalg_1_1_optimizer1_d_a52e5f76c460bc1babc25e71060fc8b36}\label{classcsc450lib_1_1linalg_1_1_optimizer1_d_a52e5f76c460bc1babc25e71060fc8b36} 
+\mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d}{Optimizer1D}} \& {\bfseries operator=} (const \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d}{Optimizer1D}} \&)=delete
+\item 
+\Hypertarget{classcsc450lib_1_1linalg_1_1_optimizer1_d_a485a40cafbeef67298771ad88e3fb7b5}\label{classcsc450lib_1_1linalg_1_1_optimizer1_d_a485a40cafbeef67298771ad88e3fb7b5} 
+\mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d}{Optimizer1D}} \& {\bfseries operator=} (\mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d}{Optimizer1D}} \&\&)=delete
+\item 
+void \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d_ad2482254c076f0511fa499057d316332}{set\+Function}} (std\+::shared\+\_\+ptr$<$ calc\+::\+Function1D $>$ f)
+\begin{DoxyCompactList}\small\item\em Set the function object to be optimized. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ const calc\+::\+Function1D $>$ \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d_ac73b37ba9358d1008926e801e3d3d2bf}{get\+Function}} () const
+\begin{DoxyCompactList}\small\item\em Get the function object being optimized. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer_record1_d}{Optimizer\+Record1D}} \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d_a1c9b21585b0a5675abd26b5cfc95c954}{minimize}} (float startX, float x\+Min, float x\+Max, float tol, int max\+Num\+Iters) const =0
+\begin{DoxyCompactList}\small\item\em Perform optimization and return the optimization record. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcsc450lib_1_1linalg_1_1_optimizer1_d_a2deb83be6782dbfee1c6b5577a6e6532}\label{classcsc450lib_1_1linalg_1_1_optimizer1_d_a2deb83be6782dbfee1c6b5577a6e6532} 
+std\+::shared\+\_\+ptr$<$ calc\+::\+Function1D $>$ {\bfseries func\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class representing an optimizer for one-\/dimensional functions. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcsc450lib_1_1linalg_1_1_optimizer1_d_af45a1488812e0ed8c06de292cd53a2a2}\label{classcsc450lib_1_1linalg_1_1_optimizer1_d_af45a1488812e0ed8c06de292cd53a2a2} 
+\index{csc450lib::linalg::Optimizer1D@{csc450lib::linalg::Optimizer1D}!Optimizer1D@{Optimizer1D}}
+\index{Optimizer1D@{Optimizer1D}!csc450lib::linalg::Optimizer1D@{csc450lib::linalg::Optimizer1D}}
+\doxysubsubsection{\texorpdfstring{Optimizer1D()}{Optimizer1D()}}
+{\footnotesize\ttfamily csc450lib\+::linalg\+::\+Optimizer1\+D\+::\+Optimizer1D (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ calc\+::\+Function1D $>$}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new \doxylink{classcsc450lib_1_1linalg_1_1_optimizer1_d}{Optimizer1D} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & Function to be optimized, wrapped in a shared pointer \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcsc450lib_1_1linalg_1_1_optimizer1_d_ac73b37ba9358d1008926e801e3d3d2bf}\label{classcsc450lib_1_1linalg_1_1_optimizer1_d_ac73b37ba9358d1008926e801e3d3d2bf} 
+\index{csc450lib::linalg::Optimizer1D@{csc450lib::linalg::Optimizer1D}!getFunction@{getFunction}}
+\index{getFunction@{getFunction}!csc450lib::linalg::Optimizer1D@{csc450lib::linalg::Optimizer1D}}
+\doxysubsubsection{\texorpdfstring{getFunction()}{getFunction()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ const calc\+::\+Function1D $>$ csc450lib\+::linalg\+::\+Optimizer1\+D\+::get\+Function (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the function object being optimized. 
+
+\begin{DoxyReturn}{Returns}
+std\+::shared\+\_\+ptr$<$const calc\+::\+Function1\+D$>$ The function being optimized 
+\end{DoxyReturn}
+\Hypertarget{classcsc450lib_1_1linalg_1_1_optimizer1_d_a1c9b21585b0a5675abd26b5cfc95c954}\label{classcsc450lib_1_1linalg_1_1_optimizer1_d_a1c9b21585b0a5675abd26b5cfc95c954} 
+\index{csc450lib::linalg::Optimizer1D@{csc450lib::linalg::Optimizer1D}!minimize@{minimize}}
+\index{minimize@{minimize}!csc450lib::linalg::Optimizer1D@{csc450lib::linalg::Optimizer1D}}
+\doxysubsubsection{\texorpdfstring{minimize()}{minimize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer_record1_d}{Optimizer\+Record1D}} csc450lib\+::linalg\+::\+Optimizer1\+D\+::minimize (\begin{DoxyParamCaption}\item[{float}]{startX,  }\item[{float}]{x\+Min,  }\item[{float}]{x\+Max,  }\item[{float}]{tol,  }\item[{int}]{max\+Num\+Iters }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Perform optimization and return the optimization record. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em startX} & Initial search point \\
+\hline
+{\em x\+Min} & Minimum x value for search \\
+\hline
+{\em x\+Max} & Maximum x value for search \\
+\hline
+{\em tol} & Tolerance for optimization \\
+\hline
+{\em max\+Num\+Iters} & Maximum number of iterations \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{classcsc450lib_1_1linalg_1_1_optimizer_record1_d}{Optimizer\+Record1D} The record of the optimization process 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d__gss_a0fda0f8fdf681dc9df93e7ad007e7da0}{csc450lib\+::linalg\+::\+Optimizer1\+D\+\_\+gss}}, \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d__parabolic_a8f0ced8de04eebf30f377b754531faaf}{csc450lib\+::linalg\+::\+Optimizer1\+D\+\_\+parabolic}}, and \mbox{\hyperlink{classcsc450lib_1_1linalg_1_1_optimizer1_d__steepest_descent_a3229328d55604af8f0281a9e0c599920}{csc450lib\+::linalg\+::\+Optimizer1\+D\+\_\+steepest\+Descent}}.
+
+\Hypertarget{classcsc450lib_1_1linalg_1_1_optimizer1_d_ad2482254c076f0511fa499057d316332}\label{classcsc450lib_1_1linalg_1_1_optimizer1_d_ad2482254c076f0511fa499057d316332} 
+\index{csc450lib::linalg::Optimizer1D@{csc450lib::linalg::Optimizer1D}!setFunction@{setFunction}}
+\index{setFunction@{setFunction}!csc450lib::linalg::Optimizer1D@{csc450lib::linalg::Optimizer1D}}
+\doxysubsubsection{\texorpdfstring{setFunction()}{setFunction()}}
+{\footnotesize\ttfamily void csc450lib\+::linalg\+::\+Optimizer1\+D\+::set\+Function (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ calc\+::\+Function1D $>$}]{f }\end{DoxyParamCaption})}
+
+
+
+Set the function object to be optimized. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & Function to be optimized, wrapped in a shared pointer \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+csc450lib/linalg/\+SDK/\+Headers/Optimizer1\+D.\+h\end{DoxyCompactItemize}

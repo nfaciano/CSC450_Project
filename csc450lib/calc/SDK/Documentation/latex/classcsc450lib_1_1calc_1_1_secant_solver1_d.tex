@@ -1,0 +1,63 @@
+\doxysection{csc450lib\+::calc\+::Secant\+Solver1D Class Reference}
+\hypertarget{classcsc450lib_1_1calc_1_1_secant_solver1_d}{}\label{classcsc450lib_1_1calc_1_1_secant_solver1_d}\index{csc450lib::calc::SecantSolver1D@{csc450lib::calc::SecantSolver1D}}
+
+
+Class representing a Secant solver for 1D nonlinear equations.  
+
+
+
+
+{\ttfamily \#include $<$Secant\+Solver1\+D.\+h$>$}
+
+Inheritance diagram for csc450lib\+::calc\+::Secant\+Solver1D\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcsc450lib_1_1calc_1_1_secant_solver1_d}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structcsc450lib_1_1calc_1_1_nonlinear_solver_record1_d}{Nonlinear\+Solver\+Record1D}} \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_secant_solver1_d_abf2d8b5504df31bc276d6bb80f12a1ac}{solve}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_function1_d}{Function1D}} $>$ f, float x0, float x1, int n, float tol) const override
+\begin{DoxyCompactList}\small\item\em Solves a 1D nonlinear equation using the Secant method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing a Secant solver for 1D nonlinear equations. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcsc450lib_1_1calc_1_1_secant_solver1_d_abf2d8b5504df31bc276d6bb80f12a1ac}\label{classcsc450lib_1_1calc_1_1_secant_solver1_d_abf2d8b5504df31bc276d6bb80f12a1ac} 
+\index{csc450lib::calc::SecantSolver1D@{csc450lib::calc::SecantSolver1D}!solve@{solve}}
+\index{solve@{solve}!csc450lib::calc::SecantSolver1D@{csc450lib::calc::SecantSolver1D}}
+\doxysubsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcsc450lib_1_1calc_1_1_nonlinear_solver_record1_d}{Nonlinear\+Solver\+Record1D}} csc450lib\+::calc\+::\+Secant\+Solver1\+D\+::solve (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_function1_d}{Function1D}} $>$}]{f,  }\item[{float}]{x0,  }\item[{float}]{x1,  }\item[{int}]{n,  }\item[{float}]{tol }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Solves a 1D nonlinear equation using the Secant method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & Pointer to the function for which to find a root. \\
+\hline
+{\em x0} & First initial guess for the root. \\
+\hline
+{\em x1} & Second initial guess for the root (should be different from x0). \\
+\hline
+{\em n} & Maximum number of iterations. \\
+\hline
+{\em tol} & Tolerance for the stopping criterion. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \doxylink{structcsc450lib_1_1calc_1_1_nonlinear_solver_record1_d}{Nonlinear\+Solver\+Record1D} object containing the results of the method. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classcsc450lib_1_1calc_1_1_nonlinear_solver1_d_ac1faf29a1ecdc52c2be4b1aa4aebdf04}{csc450lib\+::calc\+::\+Nonlinear\+Solver1D}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/nickf/\+One\+Drive/\+Desktop/\+CSC450\+\_\+\+Project/csc450lib/calc/\+SDK/\+Headers/Secant\+Solver1\+D.\+h\end{DoxyCompactItemize}

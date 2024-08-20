@@ -74,7 +74,7 @@ PROJECT_ICON           =
 # entered, it will be relative to the location where doxygen was started. If
 # left blank the current directory will be used.
 
-OUTPUT_DIRECTORY       = C:\Users\nickf\OneDrive\Desktop\CSC450_Project\calc\Documentation\
+OUTPUT_DIRECTORY       = C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\linalg\SDK\Documentation
 
 
 # If the CREATE_SUBDIRS tag is set to YES then doxygen will create up to 4096
@@ -950,7 +950,7 @@ WARN_LOGFILE           =
 # spaces. See also FILE_PATTERNS and EXTENSION_MAPPING
 # Note: If this tag is empty the current directory is searched.
 
-INPUT = C:\Users\nickf\OneDrive\Desktop\CSC450_Project\calc\SDK\Headers
+INPUT = C:\Users\nickf\OneDrive\Desktop\CSC450_Project\csc450lib\linalg\SDK\Headers
 
 
 # This tag can be used to specify the character encoding of the source files

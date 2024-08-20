@@ -1,0 +1,24 @@
+^C:\USERS\NICKF\ONEDRIVE\DESKTOP\CSC450_PROJECT\DEBUG\CMAKEFILES\5FAA5817D595B5DE7980E149028AD2EC\DOC_DOXYGEN.RULE
+setlocal
+cd C:\Users\nickf\OneDrive\Desktop\CSC450_Project\debug
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\doxygen\bin\doxygen.exe" C:/Users/nickf/OneDrive/Desktop/CSC450_Project/debug/docs/Doxyfile
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\NICKF\ONEDRIVE\DESKTOP\CSC450_PROJECT\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/nickf/OneDrive/Desktop/CSC450_Project -BC:/Users/nickf/OneDrive/Desktop/CSC450_Project/debug --check-stamp-file C:/Users/nickf/OneDrive/Desktop/CSC450_Project/debug/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

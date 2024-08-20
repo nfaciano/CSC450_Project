@@ -1,0 +1,5 @@
+C:/Users/nickf/OneDrive/Desktop/CSC450_Project/debug/CMakeFiles/calc_lib.dir
+C:/Users/nickf/OneDrive/Desktop/CSC450_Project/debug/CMakeFiles/doc.dir
+C:/Users/nickf/OneDrive/Desktop/CSC450_Project/debug/CMakeFiles/main_project.dir
+C:/Users/nickf/OneDrive/Desktop/CSC450_Project/debug/CMakeFiles/ALL_BUILD.dir
+C:/Users/nickf/OneDrive/Desktop/CSC450_Project/debug/CMakeFiles/ZERO_CHECK.dir

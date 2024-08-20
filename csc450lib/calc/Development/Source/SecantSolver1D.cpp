@@ -2,7 +2,7 @@
 
 #include "SecantSolver1D.h"
 #include "CSC450Exception.h"
-
+#include <iostream>
 namespace csc450lib {
     namespace calc {
 
@@ -27,7 +27,6 @@ namespace csc450lib {
 
                 iter++;
             }
-
             return NonlinearSolverRecord1D(x1, f1, iter, fabs(f1) <= tol);
         }
 
